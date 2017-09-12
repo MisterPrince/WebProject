@@ -1,0 +1,123 @@
+*{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+body,html{width:100%;height:100%;}
+.goods{
+	width: 1150px;
+	height:600px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.goods div h1{ 
+	width: 1150px;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #fb3434;
+    text-align: center;
+    border-radius: 6px;
+}
+.goods div img{
+	margin: 50px;
+	float: left;
+}
+.goods div h2 {
+	width: 500px;
+	height: 50px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 50px;
+	font-size: 25px;
+	font-weight: 700;
+	
+}
+.goods div p{
+	width: 500px;
+	height:80px;
+	float:left;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 16px;
+	color: #3c3c3c;
+	font-weight: 700;
+}
+#btn{
+	width: 150px;
+	height: 50px;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+#btn button{
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: #ededed;
+	border: 1px solid #ccc;
+	font-size: 20px;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 100;
+	outline: none;
+	cursor: pointer;
+}
+#btn button:hover{
+	background: #CCCCCC;
+}
+#btn .num{
+	width: 50px;
+	height: 48px;
+	float: left;
+	margin: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+	text-align: center;
+	line-height: 48px;
+}
+.goods div span {
+	width: 500px;
+	height: 30px;
+	float: left;
+	margin: 20px 0 10px 50px;
+	font-size: 26px;
+	color: #fb3434;
+	font-weight: 700;
+}
+.goods div #add-to-cart {
+	width: 150px;
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-size: 16px;
+	background: #fb3434;
+	border: 0;
+	border-radius: 5px;
+	color: #EEEEEE;
+	outline: none;
+	cursor: pointer;
+}
+.goods div #add-to-cart:hover{
+	background: #FC4200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
