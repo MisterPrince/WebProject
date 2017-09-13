@@ -44,7 +44,7 @@ document.body.onclick = function(event) {
         if (!localStorage.token) {
             alert('请先登录再购买');
             localStorage.backurl = location.href
-            location.href = "login.html";
+            location.href = "register.html";
             return;
         }
         console.log('添加到购物车');

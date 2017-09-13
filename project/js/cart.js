@@ -11,7 +11,7 @@ myajax.get('http://h6.duchengjiu.top/shop/api_cart.php', {token: localStorage.to
     oTable.innerHTML += `
                       <tr>
                         <td name="goods_id" class="id">${obj.goods_id}</td>
-                        <td class="pic"><img src="${obj.goods_thumb}" ></td>
+                        <td class="pic"><a href='goods.html?goods_id=${obj.goods_id}'><img src="${obj.goods_thumb}" ></a></td>
                         <td class="name">${obj.goods_name}</td>
                         <td class="maths"><input data-id="${obj.goods_id}" type="number" name="number" min="1" max="10" value="${obj.goods_number}" /></td>
                         <td class="price">${obj.goods_price}</td>

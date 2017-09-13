@@ -143,7 +143,7 @@ $(function(){
                 console.log(response);
                 if(response.code === 0){
                     alert("注册成功");
-                    location.href = "index.html";
+                    location.href = "register.html";
                 }else if(response.code === 2001){
                     alert("用户名已存在")
                 }else{
