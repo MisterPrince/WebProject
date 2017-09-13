@@ -1,6 +1,6 @@
 $(function(){
     var Name = $(".Iusername");
-    var Password = $(".password");
+    var Password = $("#password");
     var confirmPassword = $("#confirmPassword");
     var confirmPasswordSpan = $(".confirmPassword span");
     var NameSpan = $(".usernamespan span");
@@ -64,13 +64,13 @@ $(function(){
         }
     });
     confirmPassword.focus(function () {
-        confirmPasswordSpan.html("请输入确认密码");
+        confirmPasswordSpan.html("请再次输入密码");
     });
     confirmPassword.blur(function () {
         password = Password.val();
         confirmPass = confirmPassword.val();
         if(confirmPass == ""){
-            confirmPasswordSpan.html("请输入确认密码");
+            confirmPasswordSpan.html("请再次输入密码");
             return;
         }else if(confirmPass == password){
             confirmPasswordSpan.html("重复密码正确");
@@ -123,7 +123,7 @@ $(function(){
             return;
         }
         if(confirmPass == ""){
-            confirmPasswordSpan.html("请输入确认密码");
+            confirmPasswordSpan.html("请再次输入密码");
         }else if(confirmPass == password){
             confirmPasswordSpan.html("重复密码正确");
         }else{

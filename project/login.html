@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>一淘</title>
-    <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="unify.css">
-    <link rel="stylesheet" href="index.css">
-   	<link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/unify.css">
+    <link rel="stylesheet" href="css/index.css">
+   	<link rel="stylesheet" href="css/login.css" />
     	
 </head>
 <body>	
@@ -84,21 +83,19 @@
         </div>
        <div class="zhuce-box">
         	<div class="usernamespan">
-			<input type="text" name="username" class="Iusername" placeholder="请输入用户名">
+			<input type="text" name="username" class="Iusername" id="username" placeholder="请输入用户名">
 				<span></span>
 			</div>
 			<div class="passwordspan">
-			<input type="password" name="password" class="password" placeholder="请输入密码">
+			<input type="password" name="password" class="password" id="password" placeholder="请输入密码">
 				<span></span>
 			</div>
 			<div class="confirmPassword">
-			 <input type="password" name="password" id="confirmPassword" placeholder="请输入确认密码"><br/>
+			 <input type="password" name="password" id="confirmPassword" placeholder="请再次输入密码"><br/>
 				<span></span>
 			</div>
-			<input type="submit" value="注册" class="zhuce">
+			<input type="submit" value="注册" class="zhuce registerBut" id="registerBut">
   		</div>
-        <!--<div class="goods" id="goods">
-        </div>-->
             <div class="cartBut">
                 <span id="clickCart">我的收藏</span>
                 <span id="clickCart">点我领钱</span>
@@ -154,12 +151,12 @@
         </div>
     </footer>
 </body>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" srcd="index.js"></script>
-    <script type="text/javascript" src="myajax.js" ></script>
-    <script type="text/javascript" src="searchBut.js" ></script>
-    <script type="text/javascript" src="register.js" ></script>
-    <script type="text/javascript" src="unify.js" ></script>
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/myajax.js" ></script>
+    <script type="text/javascript" src="js/searchBut.js" ></script>
+    <script type="text/javascript" src="js/register.js" ></script>
+    <script type="text/javascript" src="js/unify.js" ></script>
     <script>
     /*吸顶效果*/
     	window.onscroll = function() {
