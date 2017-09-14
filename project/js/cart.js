@@ -59,57 +59,62 @@ oTable.addEventListener('click', function(event){
   event = event || window.event;
   var target = event.target || event.srcElement;
   if (target.name === 'delete') {
-    if (!confirm('确认要删除吗')) { //当你选择的是取消则不执行任何事情
-      return;
-    }
-    //得到商品ID
-    var goods_id = target.dataset.id;
-    var number = 0;
-    myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
-    {goods_id, number},
-    (err, responseText) => {
-      var json = JSON.parse(responseText);
-      console.log(json);
-      if (json.code === 0) {
-        // alert('更新购物车成功');
-        //删除整个TR
-        var tr = target.parentNode.parentNode;
-        tr.parentNode.removeChild(tr);
-        //显示总价
-        getSum();
-      }
+   
+    
+    confirm('确认要删除吗',function(){
+    		//得到商品ID
+		    var goods_id = target.dataset.id;
+		    var number = 0;
+		    myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
+		    {goods_id, number},
+		    (err, responseText) => {
+		      var json = JSON.parse(responseText);
+		      console.log(json);
+		      if (json.code === 0) {
+		        // alert('更新购物车成功');
+		        //删除整个TR
+		        var tr = target.parentNode.parentNode;
+		        tr.parentNode.removeChild(tr);
+		        //显示总价
+		        getSum();
+		      };
+		    },function(){
+		    	return;
+		    })
     })
+  
   }
 });
 
 var oClearCart = document.querySelector('#clear-cart');
-oClearCart.onclick = () => {
-  if (!confirm('确认要清空整个购物车吗？')) {
-    return;
-  }
-  //得到所有的商品ID
-  var oGoodsIds = document.querySelectorAll('td[name=goods_id]');
-  for (var i = 0; i < oGoodsIds.length; i++) {
-    var td = oGoodsIds[i];
-    var goods_id = parseInt(td.innerText);
-    var number = 0;
-    (function(td){
-      myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
-      {goods_id, number},
-      (err, responseText) => {
-        var json = JSON.parse(responseText);
-        console.log(json);
-        if (json.code === 0) {
-          // alert('更新购物车成功');
-          //删除整个TR
-          var tr = td.parentNode;
-          tr.parentNode.removeChild(tr);
-          //显示总价
-          getSum();
-        }
-      });
-    })(td);
-  }
+oClearCart.onclick = () => {  
+  confirm('确认要清空整个购物车吗？',function(){
+  	//得到所有的商品ID
+	  var oGoodsIds = document.querySelectorAll('td[name=goods_id]');
+	  for (var i = 0; i < oGoodsIds.length; i++) {
+	    var td = oGoodsIds[i];
+	    var goods_id = parseInt(td.innerText);
+	    var number = 0;
+	    (function(td){
+	      myajax.post('http://h6.duchengjiu.top/shop/api_cart.php?token='+localStorage.token,
+	      {goods_id, number},
+	      (err, responseText) => {
+	        var json = JSON.parse(responseText);
+	        console.log(json);
+	        if (json.code === 0) {
+	          // alert('更新购物车成功');
+	          //删除整个TR
+	          var tr = td.parentNode;
+	          tr.parentNode.removeChild(tr);
+	          //显示总价
+	          getSum();
+	        }
+	      });
+	    })(td);
+	  }
+  },function(){
+  	return;
+  })
 }
 
 //显示出总价

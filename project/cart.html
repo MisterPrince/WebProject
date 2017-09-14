@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/unify.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/cart.css" />
-    	
+    <link rel="stylesheet" href="css/alert.css" />
+    <link rel="stylesheet" href="css/confirm.css" />
 </head>
 <body>	
     <header>
@@ -152,11 +153,12 @@
     </footer>
 </body>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/myajax.js" ></script>
     <script type="text/javascript" src="js/searchBut.js" ></script>
     <script type="text/javascript" src="js/cart.js" ></script>
     <script type="text/javascript" src="js/unify.js" ></script>
+    <script type="text/javascript" src="js/alert.js" ></script>
+    <script type="text/javascript" src="js/confirm.js" ></script>
     <script>
     /*吸顶效果*/
     	window.onscroll = function() {
@@ -165,7 +167,7 @@
 	    		var onavbox =  document.querySelector('#goodsList');
 	    		onavbox.style.position = 'fixed';
 	    		onavbox.style.top = 0;
-	    		onavbox.style.zIndex = 99999;
+	    		onavbox.style.zIndex = 999;
 	    	}else{
 				document.querySelector('#goodsList').style.position ="";
 	    	}

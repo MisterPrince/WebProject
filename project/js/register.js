@@ -141,9 +141,8 @@ $(function(){
             },
             "success":function (response) {
                 console.log(response);
-                if(response.code === 0){
-                    alert("注册成功");
-                    location.href = "register.html";
+                if(response.code === 0){                  
+                  location.href = "register.html";
                 }else if(response.code === 2001){
                     alert("用户名已存在")
                 }else{
