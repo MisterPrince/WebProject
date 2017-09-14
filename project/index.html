@@ -27,7 +27,7 @@
 			    		<a href="javascript:localStorage.clear(); location.reload();" class="logout">退出</a>
                         <a href="login.html" id="register" name="register" class="register">免费注册</a>
                     </li>
-                    <li><a href="OMS.html">我的订单</a></li>
+                    <li><a href="order.html">我的订单</a></li>
                     <li><a href="cart.html" id="cart">购物车</a></li>
                     <li><a href="#">消息</a></li>
                     <li><a href="#">我的积分</a></li>
@@ -76,7 +76,7 @@
             	<li><a href="#" class="border3">限时闪购</a></li>
             </ul>
         </div>
-        <div  id="goodsList">
+        <div  id="goodsList" class="second-nav fixd-nav">
             <ul id="goodsListUl"></ul>
         </div>
         <div class="carouselContainer">
@@ -195,6 +195,7 @@
 				document.querySelector('#goodsList').style.position ="";
 	    	}
     	}
+    	
 	    
 	    var oUl1 = document.querySelector('#goodsListUl');
 			myajax.get('http://h6.duchengjiu.top/shop/api_cat.php', {},function(error,responseText){

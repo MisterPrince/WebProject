@@ -94,6 +94,7 @@ Modal.prototype.bindEvent = function() {
     var target = event.target || event.srcElement;
     if (target.className === 'close' || target.className === 'modal') {
       this.oModal.style.display = 'none';
+      location.reload();
     }
   }
 
