@@ -1,0 +1,177 @@
+*{padding:0;margin:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+body,html{width:100%;height:100%;}
+/*===============================================header============================================*/
+
+/*iPhone5*/
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+}
+/*iPhone6*/
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 16px;
+  }
+}
+/*iPhone6Plus*/
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+/*=============================one two===================================================*/
+.shopping-list{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0	
+	width: 100%;
+	height: 3.13rem;
+	margin-bottom: 1.25rem;
+	background: #ff5400;
+	
+	z-index: 99;
+	overflow-x: scroll;
+  overflow-y: hidden;
+}
+.shopping-list ul{
+	width:23.44rem;
+	height:3.13rem;
+	margin: 0 auto;
+	background-color: #ff5400;
+	white-space: nowrap;
+}
+.shopping-list ul .lione{
+	font-style: normal;
+	float: left;
+	margin-left: 1.25rem;
+	margin-right: 0.65rem;
+	margin-top: 0.94rem;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+.shopping-list ul li {
+	display: inline-block;
+  list-style: none;
+  float: none;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  margin-top: 0.31rem;
+  padding: 0.625rem;
+  color: white;
+  vertical-align: top;
+  text-align: center;
+}
+.shopping-list ul li:hover{
+	background:orange;
+}
+.shopping-list ul li a {
+	text-decoration: none;
+	color: white;
+}
+.shopping-list ul li a:hover{
+	text-decoration: underline;
+}
+.light{
+	background-color: orange;
+}
+.shopping-info{
+	width: 23.44rem;
+	margin: 0 auto;
+	background: white;
+	position: relative;
+	top: 3.06rem;
+	left: 0;
+}
+.shopping-info h1{
+	width: 6.25rem;
+	height: 2.5rem;
+	margin: 0 auto;
+	font-weight: 100;
+	font-size: 20px;
+	line-height: 2.5rem;
+	text-align: center;
+	color: rgb(255, 68, 17);
+	background: url(../images/TB1adb0OFXXXXXzapXXXXXXXXXX-245-81.png) no-repeat;
+	background-size: 100%;
+}
+.shopping-info ul{
+	width:22.8rem;
+	margin: 0 auto;
+	background-color: ghostwhite;
+	padding-left: 0.625rem;
+}
+.shopping-info ul li {
+	width:10.58rem;	
+	height:18.5rem;
+	float: left;
+	list-style: none;
+	margin-right: 0.625rem;
+	color: white;
+	background: white;
+   
+}
+.shopping-info ul li a{
+	width:10.58rem;
+	height:18.5rem;
+	float: left;
+    list-style: none;
+    color: #6c6c6c;
+    border:2px solid pink;
+}
+.shopping-info ul li a div{
+	width:10.58rem;
+	height:11.375rem;
+	float:left;
+	overflow: hidden;
+	position: relative;
+}
+.shopping-info ul li a div img {
+	width:10.58rem;
+	height:11.375rem;
+	float:left;
+	margin:0;
+}
+.shopping-info ul li a h2{
+	width: 9.89rem;
+	height:2.2rem;
+	float:left;
+	font-size:15px;
+	padding:8px;
+	line-height: 1.3rem;
+	font-weight: 100;
+	color: #6C6C6C;
+	overflow: hidden;
+}
+.shopping-info ul li a span {
+	width: 6rem;
+	height: 1.25rem;
+	float: left;
+	margin:0.3125rem 4.125rem 0.3125rem 0.5rem;
+	color: #FFFFFF;
+	border-radius: 5px;
+	background: orange;
+	text-align: center;
+	line-height: 1.25rem;
+}
+.shopping-info ul li a img {
+	width: 1.5rem;
+	height: 1.5rem;
+	float: left;
+	margin-left: 0.5rem;
+	margin-top: 5px;
+}
+.shopping-info ul li a p{
+	width: 4.375rem;
+	height: 1.25rem;
+	float: left;
+	font-size: 12px;
+	color: red;
+	margin: 0.75rem 2rem 0 1.25rem;
+}
